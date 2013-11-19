@@ -1,4 +1,4 @@
-package com.milespomeroy.learn;
+package com.milespomeroy.jersey2jdbi2hk2;
 
 import javax.inject.Singleton;
 

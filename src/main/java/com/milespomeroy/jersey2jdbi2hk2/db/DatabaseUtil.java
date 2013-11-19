@@ -1,4 +1,4 @@
-package com.milespomeroy.learn.db;
+package com.milespomeroy.jersey2jdbi2hk2.db;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;

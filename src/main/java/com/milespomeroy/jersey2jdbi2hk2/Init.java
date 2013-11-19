@@ -1,4 +1,4 @@
-package com.milespomeroy.learn;
+package com.milespomeroy.jersey2jdbi2hk2;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.Handle;
 
-import com.milespomeroy.learn.db.DatabaseUtil;
+import com.milespomeroy.jersey2jdbi2hk2.db.DatabaseUtil;
 
 public class Init implements ServletContextListener {
 

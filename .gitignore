@@ -8,3 +8,4 @@ target/*
 *.iml
 nbactions.xml
 /bin
+/target

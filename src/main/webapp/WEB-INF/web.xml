@@ -6,7 +6,7 @@
 	<display-name>Archetype Created Web Application</display-name>
 	
 	<listener>
-		<listener-class>com.milespomeroy.learn.Init</listener-class>
+		<listener-class>com.milespomeroy.jersey2jdbi2hk2.Init</listener-class>
 	</listener>
 
 	<servlet>
@@ -14,7 +14,7 @@
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
-			<param-value>com.milespomeroy.learn.App</param-value>
+			<param-value>com.milespomeroy.jersey2jdbi2hk2.App</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
