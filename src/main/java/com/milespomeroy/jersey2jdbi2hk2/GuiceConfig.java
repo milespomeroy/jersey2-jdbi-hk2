@@ -6,6 +6,9 @@ import com.google.inject.servlet.GuiceServletContextListener;
 import com.google.inject.servlet.ServletModule;
 import com.lingotek.jdbi.JdbiModule;
 
+import javax.servlet.annotation.WebListener;
+
+@WebListener
 public class GuiceConfig extends GuiceServletContextListener
 {
 	@Override
