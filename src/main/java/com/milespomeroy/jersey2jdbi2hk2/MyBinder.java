@@ -2,6 +2,7 @@ package com.milespomeroy.jersey2jdbi2hk2;
 
 import javax.inject.Singleton;
 
+import com.milespomeroy.jersey2jdbi2hk2.service.MagicService;
 import org.glassfish.hk2.api.InjectionResolver;
 import org.glassfish.hk2.api.TypeLiteral;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
@@ -19,6 +20,7 @@ public class MyBinder extends AbstractBinder {
         bind(OnDemandFactoryProvider.InjectionResolver.class).to(
             new TypeLiteral<InjectionResolver<OnDemand>>() {
             }).in(Singleton.class);
+//		bind(MagicService.class).to(MagicService.class);
 	}
 
 }

@@ -1,12 +1,6 @@
 package com.milespomeroy.jersey2jdbi2hk2.ondemand;
 
-import java.lang.reflect.Modifier;
-
-import javax.inject.Inject;
-import javax.inject.Singleton;
-import javax.ws.rs.container.ResourceContext;
-import javax.ws.rs.core.Context;
-
+import com.milespomeroy.jersey2jdbi2hk2.db.DatabaseUtil;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.jersey.server.internal.inject.AbstractContainerRequestValueFactory;
 import org.glassfish.jersey.server.internal.inject.AbstractValueFactoryProvider;
@@ -15,7 +9,9 @@ import org.glassfish.jersey.server.internal.inject.ParamInjectionResolver;
 import org.glassfish.jersey.server.model.Parameter;
 import org.skife.jdbi.v2.DBI;
 
-import com.milespomeroy.jersey2jdbi2hk2.db.DatabaseUtil;
+import javax.inject.Inject;
+import javax.inject.Singleton;
+import java.lang.reflect.Modifier;
 
 @Singleton
 public final class OnDemandFactoryProvider extends AbstractValueFactoryProvider {

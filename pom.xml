@@ -61,6 +61,19 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
+
+            <plugin>
+                <groupId>org.glassfish.hk2</groupId>
+                <artifactId>hk2-inhabitant-generator</artifactId>
+                <version>2.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate-inhabitants</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
