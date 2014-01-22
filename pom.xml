@@ -53,6 +53,11 @@
             <artifactId>guice-servlet</artifactId>
             <version>4.0-beta</version>
         </dependency>
+        <dependency>
+            <groupId>com.lingotek</groupId>
+            <artifactId>jdbi</artifactId>
+            <version>3.9.1-1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 	<build>

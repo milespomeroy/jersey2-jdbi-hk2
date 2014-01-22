@@ -4,6 +4,7 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.servlet.GuiceServletContextListener;
 import com.google.inject.servlet.ServletModule;
+import com.lingotek.jdbi.JdbiModule;
 
 public class GuiceConfig extends GuiceServletContextListener
 {
@@ -11,6 +12,7 @@ public class GuiceConfig extends GuiceServletContextListener
 	protected Injector getInjector()
 	{
 		return Guice.createInjector(
+                    new JdbiModule(),
                     new GuiceModule(),
 					new ServletModule()
 					{
